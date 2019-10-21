@@ -1,5 +1,5 @@
 /*      light colors         */
-.flex-row, .centered-row, .ecosystems__navbar .main-panel .navbar-brand, .ecosystems__navbar .main-panel .navbar-nav {
+.flex-row, .centered-row, .user__navbar .main-panel .navbar-brand, .user__navbar .main-panel .navbar-nav {
   display: flex;
   flex-direction: row; }
 
@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between; }
 
-.centered-row, .ecosystems__navbar .main-panel .navbar-brand, .ecosystems__navbar .main-panel .navbar-nav {
+.centered-row, .user__navbar .main-panel .navbar-brand, .user__navbar .main-panel .navbar-nav {
   align-items: center; }
 
 .stretch {
@@ -104,38 +104,38 @@
   animation-direction: normal;
   animation-timing-function: ease-in-out; }
 
-.ecosystems-wrapper.wrapper {
+.user-wrapper.wrapper {
   background-color: #f9f9f9; }
 
-.ecosystems__navbar {
+.user__navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 110px; }
-  .ecosystems__navbar .logo {
+  .user__navbar .logo {
     display: flex;
     align-items: center;
     padding-left: 64px;
     width: 320px;
     height: 100%; }
-    .ecosystems__navbar .logo__normal {
+    .user__navbar .logo__normal {
       display: flex;
       justify-content: center; }
-    .ecosystems__navbar .logo img {
+    .user__navbar .logo img {
       width: 124px; }
-  .ecosystems__navbar .main-panel {
+  .user__navbar .main-panel {
     height: 100%;
     background-color: #f9f9f9;
     margin-right: 60px;
     flex: 1; }
-    .ecosystems__navbar .main-panel .container {
+    .user__navbar .main-panel .container {
       padding-left: 0;
       padding-right: 0; }
-    .ecosystems__navbar .main-panel-content {
+    .user__navbar .main-panel-content {
       height: 100%;
       display: flex;
       align-items: center; }
-    .ecosystems__navbar .main-panel .navbar-brand {
+    .user__navbar .main-panel .navbar-brand {
       -webkit-transition: all 0.2s;
       -moz-transition: all 0.2s;
       -o-transition: all 0.2s;
@@ -148,17 +148,17 @@
       cursor: pointer;
       margin: 0;
       border-bottom: 3px solid transparent; }
-      .ecosystems__navbar .main-panel .navbar-brand.active, .ecosystems__navbar .main-panel .navbar-brand:hover {
+      .user__navbar .main-panel .navbar-brand.active, .user__navbar .main-panel .navbar-brand:hover {
         border-bottom: 3px solid #4986c5; }
-    .ecosystems__navbar .main-panel .navbar-nav {
+    .user__navbar .main-panel .navbar-nav {
       height: 100%; }
-    .ecosystems__navbar .main-panel .navbar-item a {
+    .user__navbar .main-panel .navbar-item a {
       padding: 0 34px;
       margin: 0;
       border-right: 1px solid #e2eaed; }
-    .ecosystems__navbar .main-panel .navbar-item.last a {
+    .user__navbar .main-panel .navbar-item.last a {
       border-right: 1px solid transparent !important; }
-    .ecosystems__navbar .main-panel .navbar-item .dropdown-toggle {
+    .user__navbar .main-panel .navbar-item .dropdown-toggle {
       display: flex;
       flex-direction: row;
       padding: 6px 12px;
@@ -173,26 +173,26 @@
       border-radius: 0px;
       background-color: transparent;
       margin: 0; }
-      .ecosystems__navbar .main-panel .navbar-item .dropdown-toggle .caret {
+      .user__navbar .main-panel .navbar-item .dropdown-toggle .caret {
         visibility: hidden; }
-    .ecosystems__navbar .main-panel .navbar-search {
+    .user__navbar .main-panel .navbar-search {
       height: 26px;
       width: 26px; }
-    .ecosystems__navbar .main-panel .navbar-notification {
+    .user__navbar .main-panel .navbar-notification {
       height: 30px;
       width: 24px; }
-    .ecosystems__navbar .main-panel .navbar-user {
+    .user__navbar .main-panel .navbar-user {
       height: 28px;
       width: 28px; }
-    .ecosystems__navbar .main-panel .nav-profile {
+    .user__navbar .main-panel .nav-profile {
       align-items: center; }
-      .ecosystems__navbar .main-panel .nav-profile p {
+      .user__navbar .main-panel .nav-profile p {
         font-size: 14px;
         color: #6d8994; }
-      .ecosystems__navbar .main-panel .nav-profile i {
+      .user__navbar .main-panel .nav-profile i {
         margin-left: 7px;
         color: #6d8994;
         font-size: 24px; }
-    .ecosystems__navbar .main-panel .navbar-default {
+    .user__navbar .main-panel .navbar-default {
       background-color: #f9f9f9;
       border-bottom: 1px solid rgba(191, 191, 191, 0.4); }

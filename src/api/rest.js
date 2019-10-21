@@ -8,13 +8,11 @@ import { loading } from '../store/global/actions'
 const { store } = configStore
 
 export const auth = axios.create({
-	// baseURL: process.env.REACT_APP_API_URL
-	baseURL:'http://blooming-stream-45371.herokuapp.com/api/',
+	baseURL: process.env.REACT_APP_API_URL
 })
 
 export const rest = axios.create({
-	// baseURL: process.env.REACT_APP_API_URL,
-	baseURL:'http://blooming-stream-45371.herokuapp.com/api/',
+	baseURL: process.env.REACT_APP_API_URL,
 	transformResponse: [
 		...axios.defaults.transformResponse,
 		data => humps.camelizeKeys(data)
@@ -75,7 +73,7 @@ export function resetPassword(credentials) {
 }
 
 export function logout() {
-	return rest.post(`/v2/people/logout`, {}).then(response => response.data)
+	return auth.post(`/v2/people/logout`, {}).then(response => response.data)
 }
 
 export const readUserData = () => rest.get(`v2/people/me`).then(response => response.data)

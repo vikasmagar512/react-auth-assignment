@@ -43,6 +43,7 @@ class HeaderLinks extends Component {
   
 	render() {
 		const {
+			location: { pathname },
 			person
 		} = this.props
 		const age = moment(person.createdAt).startOf('day').fromNow();

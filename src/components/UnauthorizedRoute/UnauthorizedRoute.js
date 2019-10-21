@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect, Route, withRouter } from 'react-router-dom'
 import { compose } from 'recompose'
-import PropTypes from 'prop-types'
 
 import {
 	isAuthenticatedSelector
@@ -22,10 +21,6 @@ const UnauthorizedRoute = ({ component: Component, ...rest }) => {
 			}}
 		/>
 	)
-}
-
-UnauthorizedRoute.propTypes = {
-	component: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({
