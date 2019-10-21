@@ -1,0 +1,67 @@
+@import '../../assets/sass/lbd//variables.scss';
+
+#popover-commit {
+	border: solid 0.5px #dadddf;
+	box-shadow: 0 2px 4px 0 #eeeeee;
+	width: 280px;
+	max-width: unset;
+	z-index: 10;
+
+	.arrow {
+		visibility: hidden;
+	}
+	.popover-content {
+		padding: 0;
+	}
+	.commit-list {
+		padding: 25px 20px 10px 20px;
+		max-height: 350px;
+		overflow-y: auto;
+	}
+	.userWrapper{
+		padding: 10px;
+		h3{
+			font-weight: 400;
+			margin:0;
+		}
+		h4{
+			font-weight: 600;
+			margin:0;
+		}
+		h5{
+			margin:0;
+		}
+		.securitySection{
+			margin-top: 25px;
+		}
+		.info{
+			margin-bottom: 15px;
+			.header{
+				font-weight:800;	
+			}
+			span{
+				color:$wedge-primary-gray;
+			}
+		}
+		.flex-row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.commit-actions {
+			padding: 10px;
+			flex-direction: row;
+			.row{
+				display: flex;
+				justify-content: center;
+			}
+			.button {
+				font-size: 18px;
+				font-weight: normal;
+				border-radius: 3px;
+				padding: 8px 32px;
+			}
+		}
+	}
+	
+}

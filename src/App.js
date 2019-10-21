@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route, Router, Switch } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css'
+import { connect } from 'react-redux';
+import history from './history'
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import User from './layouts/User/User'
+import Login from './layouts/Login/Login'
+import { readPasswordCriteria } from './views/User/scenario-actions'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	componentDidMount(){
+		this.props.readPasswordCriteria()
+	}
+
+	render() {
+		return (
+			<div className="App">
+				<React.Fragment>
+					<Router history={history}>
+						<Switch>
+							<ProtectedRoute path={'/'} exact component={User} />
+							<ProtectedRoute path={'/user'} component={User} />
+							<Route path={'/auth'} component={Login} />
+							<Route path="/notFound" render={() => (<div> Not Found</div>)} />
+							<Route path="*" render={() => (<div>Page Not Found</div>)} />
+						</Switch>
+					</Router>
+					<ToastContainer />
+				</React.Fragment>
+			</div>
+		);
+	}
 }
 
-export default App;
+const mapStateToProps = state => ({
+	...state
+})
+
+const mapDispatchToProps = dispatch => ({
+	readPasswordCriteria: () => dispatch(readPasswordCriteria()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

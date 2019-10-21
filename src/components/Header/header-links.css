@@ -1,0 +1,48 @@
+/*      light colors         */
+#popover-commit {
+  border: solid 0.5px #dadddf;
+  box-shadow: 0 2px 4px 0 #eeeeee;
+  width: 280px;
+  max-width: unset;
+  z-index: 10; }
+  #popover-commit .arrow {
+    visibility: hidden; }
+  #popover-commit .popover-content {
+    padding: 0; }
+  #popover-commit .commit-list {
+    padding: 25px 20px 10px 20px;
+    max-height: 350px;
+    overflow-y: auto; }
+  #popover-commit .userWrapper {
+    padding: 10px; }
+    #popover-commit .userWrapper h3 {
+      font-weight: 400;
+      margin: 0; }
+    #popover-commit .userWrapper h4 {
+      font-weight: 600;
+      margin: 0; }
+    #popover-commit .userWrapper h5 {
+      margin: 0; }
+    #popover-commit .userWrapper .securitySection {
+      margin-top: 25px; }
+    #popover-commit .userWrapper .info {
+      margin-bottom: 15px; }
+      #popover-commit .userWrapper .info .header {
+        font-weight: 800; }
+      #popover-commit .userWrapper .info span {
+        color: #76888f; }
+    #popover-commit .userWrapper .flex-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    #popover-commit .userWrapper .commit-actions {
+      padding: 10px;
+      flex-direction: row; }
+      #popover-commit .userWrapper .commit-actions .row {
+        display: flex;
+        justify-content: center; }
+      #popover-commit .userWrapper .commit-actions .button {
+        font-size: 18px;
+        font-weight: normal;
+        border-radius: 3px;
+        padding: 8px 32px; }

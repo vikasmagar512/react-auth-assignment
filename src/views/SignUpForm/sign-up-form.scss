@@ -1,0 +1,196 @@
+@import '../../assets/sass/lbd/variables.scss';
+@import '../../assets/sass/lbd/mixins.scss';
+
+.signup-form-page {
+	&--content {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		z-index: 4;
+		padding-top: 100px;
+		justify-content: center;
+		align-items: center;
+
+		@media only screen and (max-width: 992px) {
+			padding-top: 32px;
+		}
+		
+		.sign-up-form {
+			width: 400px;
+			@media only screen and (max-width: 992px) {
+				width: 360px;
+			}
+			
+			.input-container {
+				margin-bottom: 18px;
+				padding: 16px 16px;
+				background-color: white;
+				border: 1px solid #d0d4d6;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			.error-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 0;
+				padding-top: 0;
+				.close-icon {
+					width: 12px;
+					height: 12px;
+					color: '#AC4847';
+				}
+			}
+
+			.spinner {
+				margin: 0 auto;
+			}
+
+			input {
+				flex: 1;
+				font-size: 18px;
+				color: $wedge-blue-gray;
+				border: 0;
+				margin-left: 16px;
+				&::placeholder {
+					color: #c5c8c9;
+				}
+			}
+			.icon-container {
+				width: 18px;
+				height: 18px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.input-icon {
+					max-height: 18px;
+					max-width: 18px;
+				}
+				.person-icon {
+					max-height: 25px;
+					max-width: 25px;
+				}
+				.icon-organization{
+					font-size: 18px;
+				}
+				&.eye{
+					cursor: pointer;
+				}
+			}
+			.signup-button {
+				cursor: pointer;
+				color: white;
+				padding: 16px;
+				background-color: $wedge-primary-blue;
+				border-radius: 3.8px;
+				padding: 0 10px;
+				font-size: 18px;
+				text-align: center;
+				height: 50px;
+				margin: 0;
+				width: 100%;
+			}
+			.login-button {
+				background-color: $wedge-primary-blue;
+			}
+			.signUp-button {
+				background-color: $wedge-primary-green;
+			}
+			p.sign {
+				font-size: 16px;
+				margin: 0;
+				line-height: normal;
+				text-align: right;
+				&-link {
+					color: $wedge-primary-green;
+					cursor: pointer;
+				}
+			}	
+
+			.alert-danger {
+				background-color: #f2dede;
+				border: 1px solid #a94442;
+				color: #a94442;
+				padding: 16px;
+				border-radius: 0.25rem;
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	.signup-button {
+		cursor: pointer;
+		color: white;
+		padding: 16px;
+		background-color: $wedge-primary-blue;
+		border-radius: 3.8px;
+		font-size: 18px;
+		text-align: center;
+		margin: 0;
+		width: 100%;
+		height: 50px;
+		flex: 0;
+	}
+
+	&--footer {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		.footer--image {
+			background-color: #f9f9f9;
+			width: 100%;
+			object-fit: contain;
+
+			@media only screen and (max-width: 992px) {
+				width: unset;
+				max-height: 50vh;
+			}
+		}
+	}
+}
+.submit-button-container {
+	width: 100%;
+	height: 50px;
+}
+
+#popover-password {
+	border: solid 0.5px #dadddf;
+	box-shadow: 0 2px 4px 0 #eeeeee;
+	width: 280px;
+	max-width: unset;
+	z-index: 10;
+
+	.arrow {
+		visibility: hidden;
+	}
+	.popover-content {
+		padding: 0;
+	}
+	.commit-list {
+		padding: 25px 20px 10px 20px;
+		max-height: 350px;
+		overflow-y: auto;
+	}
+	.userWrapper{
+		padding: 10px;
+		
+		h5{
+			margin:0;
+		}
+		.list{
+			margin-top: 0;
+			margin-left: -10px;
+		}
+		.info{
+			margin-bottom: 15px;
+			.header{
+				font-weight:800;	
+			}
+			span{
+				color:$wedge-primary-gray;
+			}
+		}
+	}
+	
+}
