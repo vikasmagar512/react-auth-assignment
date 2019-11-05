@@ -16,7 +16,7 @@ import places from "./places.json";
 const CityList = props =><div>
 	<ul className="list-group">
 	{
-		props.items.map((item,i)=><li key={i}  className="list-group-item" onClick={e => props.onClick(e, item)}>
+		props.items.map((item,i)=><li key={i} className={`list-group-item ${props.selectedItem && props.selectedItem.name === item.name ? 'selected' :''}`} onClick={e => props.onClick(e, item)}>
 			{item.title}
 		</li>)
 	}
@@ -93,7 +93,7 @@ class User extends React.Component {
 										onChange={this.handleChange}/>
 									</fieldset>
 								</form>
-								<CityList items={this.state.data} onClick={this.showInfo} />
+								<CityList items={this.state.data} selectedItem={this.state.selectedItem} onClick={this.showInfo} />
 							</div>
 						</div>
 					</div>)
