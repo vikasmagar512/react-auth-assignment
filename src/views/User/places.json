@@ -1,0 +1,23 @@
+[
+	{
+	  "name": "Sydney Park",
+	  "title": "Sydney Park",
+	  "lat": -33.847927,
+	  "lng": 150.6517938,
+	  "id": 1
+	},
+	{
+	  "name": "Melbourne Park",
+	  "title": "Melbourne Park",
+	  "lat": -37.9722342,
+	  "lng": 144.7729561,
+	  "id": 2
+	},
+	{
+	  "name": "Perth Park",
+	  "title": "Perth Park",
+	  "lat": -31.9546904,
+	  "lng": 115.8350292,
+	  "id": 3
+	}
+]

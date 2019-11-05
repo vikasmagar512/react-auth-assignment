@@ -121,7 +121,6 @@ HeaderLinks.propTypes = {
 }
 
 const mapStateToProps = state => {
-	debugger
 	return {
 	person: state.user.person
 }}
